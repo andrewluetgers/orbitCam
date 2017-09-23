@@ -39,7 +39,7 @@ function init(isPerspective) {
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	renderer.setClearColor (0x444444, 1);
 	
-	orbitCam = OrbitCam(camera, renderer);
+	orbitCam = OrbitCam(THREE, TWEEN, camera, renderer);
 	orbitCam.rotate(1125, -30, {duration: 1000, relative: true});
 	
 	document.body.appendChild(renderer.domElement);
