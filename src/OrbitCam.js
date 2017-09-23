@@ -23,12 +23,12 @@
 		 * @param azimuthDeg (number) degrees to rotate left or right range: unlimited
 		 * @param polarDeg (number) degrees to rotate up or down range: -180 to 180
 		 * @param options (object) {
-	 *      relative: (boolean) truthy if motion should be relative to current position
-	 *                          otherwise rotation degrees will be treated as absolute targets
-	 *      duration: (number) milliseconds for duration of camera animation default: 300,
-	 *      ease: (function) Tween.js tween function, default: TWEEN.Easing.Quadratic.InOut
-	 *      onComplete: (function) called at end of animation
-	 * }
+		 *      relative: (boolean) truthy if motion should be relative to current position
+		 *                          otherwise rotation degrees will be treated as absolute targets
+		 *      duration: (number) milliseconds for duration of camera animation default: 300,
+		 *      ease: (function) Tween.js tween function, default: TWEEN.Easing.Quadratic.InOut
+		 *      onComplete: (function) called at end of animation
+		 * }
 		 * @returns {number|*}
 		 */
 		function rotate(azimuthDeg, polarDeg, options) {
@@ -67,9 +67,19 @@
 				.start();
 		}
 		
+		function update() {
+			controls.update();
+			TWEEN.update();
+		}
+		
 		// relative rotation convenience functions
 		return {
+			
+			// the THREE.OrbitControls instance
 			controls: controls,
+			
+			// call in the render loop
+			update: update,
 			
 			// animated relative and absolute rotation by degree
 			rotate: rotate,

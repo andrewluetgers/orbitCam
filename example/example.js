@@ -57,8 +57,7 @@ function init(isPerspective) {
 	}
 	
 	function mainLoop() {
-		orbitCam.controls.update();
-		TWEEN.update();
+		orbitCam.update();
 		renderer.render(scene, camera);
 		requestAnimationFrame(mainLoop);
 	}
