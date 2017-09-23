@@ -7,6 +7,8 @@ Animations use [Tween.js](https://github.com/tweenjs/tween.js/)
 ```
 npm install orbitcam
 ```
+Can also load src/OrbitCam.js directly into a browser and it will assign itself to the OrbitCam global.
+
 
 ### Initialization
 ```
