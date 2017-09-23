@@ -1,0 +1,29 @@
+{
+  "name": "orbitcam",
+  "version": "1.0.0",
+  "description": "Simple animated camera rotations api for Three.js OrbitControls Edit",
+  "main": "src/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewluetgers/orbitCam.git"
+  },
+  "keywords": [
+    "Three.js",
+    "orbit",
+    "camera",
+    "animate",
+    "rotate"
+  ],
+  "author": "Andrew Luetgers <andrew.luetgers@gmail.com> (http://www.andrewluetgers.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewluetgers/orbitCam/issues"
+  },
+  "homepage": "https://github.com/andrewluetgers/orbitCam#readme"
+}

@@ -1,0 +1,38 @@
+<html><head>
+	<title>Housing Data Scatterplot</title>
+	<style>
+		html { height: 100% }
+		body { height: 100%; margin: 0; padding: 0; color: #ffffff; }
+		canvas { width: 100%; height: 100%; position: absolute; top:0; z-index: 100; }
+		#controls {
+			position: absolute;
+			z-index: 101;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="controls">
+		<p>Absolute rotation to the 6 main views</p>
+		<button class="left" onclick="orbitCam.to.left()">Left</button>
+		<button class="right" onclick="orbitCam.to.right()">Right</button>
+		<button class="top" onclick="orbitCam.to.top()">Top</button>
+		<button class="bottom" onclick="orbitCam.to.bottom()">Bottom</button>
+		<button class="front" onclick="orbitCam.to.front()">Front</button>
+		<button class="back" onclick="orbitCam.to.back()">Back</button>
+		<hr>
+		<p>30&deg; relative rotations with a 1000ms duration</p>
+		<button class="left" onclick="orbitCam.go.left(30, 1000)">Left</button>
+		<button class="right" onclick="orbitCam.go.right(30, 1000)">Right </button>
+		<button class="top" onclick="orbitCam.go.up(30, 1000)">Up</button>
+		<button class="bottom" onclick="orbitCam.go.down(30, 1000)">Down	</button>
+	</div>
+
+
+	<script src="three.min.js"></script>
+	<script src="OBJLoader.js"></script>
+	<script src="OrbitControls.js"></script>
+	<script src="tween.js"></script>
+	<script src="../src/OrbitCam.js"></script>
+	<script src="example.js"></script>
+</body></html>
