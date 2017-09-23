@@ -17,17 +17,16 @@ function init(isPerspective) {
 	
 	//Cube
 	var textures = [
-			'3.png', // right
-			'2.png', // left
-			'5.png', // top
-			'4.png', // bottom
-			'1.png', // front
-			'6.png'  // back
+			'rubiks/blue.png', // right
+			'rubiks/green.png', // left
+			'rubiks/white.png', // top
+			'rubiks/yellow.png', // bottom
+			'rubiks/red.png', // front
+			'rubiks/orange.png'  // back
 		],
 		geometry = new THREE.BoxGeometry(80, 80, 80, 3, 3, 3),
 		materials = textures.map(function(t) {
-			var loader = new THREE.TextureLoader(),
-				tex = loader.load(t);
+			var tex = (new THREE.TextureLoader()).load(t);
 			return new THREE.MeshPhongMaterial({color: 0xffffff, map:tex});
 		});
 	
@@ -41,7 +40,7 @@ function init(isPerspective) {
 	renderer.setClearColor (0x444444, 1);
 	
 	orbitCam = OrbitCam(camera, renderer);
-	orbitCam.rotate(45, 45, {duration: 1000});
+	orbitCam.rotate(1125, -30, {duration: 1000, relative: true});
 	
 	document.body.appendChild(renderer.domElement);
 	window.addEventListener('resize', onWindowResize, false);
