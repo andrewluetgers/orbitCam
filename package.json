@@ -1,6 +1,6 @@
 {
   "name": "orbitcam",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple animated camera rotations api for Three.js OrbitControls Edit",
   "main": "src/index.js",
   "directories": {
