@@ -1,7 +1,7 @@
 # orbitCam
 Simple animated camera rotations api for [Three.js](https://threejs.org/) [OrbitControls](https://github.com/mattdesl/three-orbit-controls)
 
-![rubiks-example](https://user-images.githubusercontent.com/232036/30818911-90fc583e-a1e2-11e7-9ee6-64d96de66f56.gif)
+![rebiks-example2](https://user-images.githubusercontent.com/232036/30819012-f97e7cac-a1e2-11e7-89d9-229fb802b6cc.gif)
 
 Animations use [Tween.js](https://github.com/tweenjs/tween.js/)
 
