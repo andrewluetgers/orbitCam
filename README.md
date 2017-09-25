@@ -1,3 +1,6 @@
+## Depricated
+This project is surpassed by https://github.com/yomotsu/camera-controls
+
 # orbitCam
 Simple animated camera rotations api for [Three.js](https://threejs.org/) [OrbitControls](https://github.com/mattdesl/three-orbit-controls)
 
