@@ -41,3 +41,5 @@ orbitCam.rotate(1125, -30, {duration: 1000, relative: true});
 ```
 
 See source and example for more details.
+
+![rubiks-example](https://user-images.githubusercontent.com/232036/30818911-90fc583e-a1e2-11e7-9ee6-64d96de66f56.gif)
